@@ -8,8 +8,8 @@ console.log("env:");
 console.log(env);
 
 const instance = axios.create({
-  httpsAgent: new HttpsProxyAgent("http://127.0.0.1:8001"),
-  proxy: false,
+  // httpsAgent: new HttpsProxyAgent("http://127.0.0.1:8001"),
+  // proxy: false,
   headers: {
     "Content-Type": "application/json",
     Authorization: `Bearer ${env.OPENAI_API_KEY}`,
